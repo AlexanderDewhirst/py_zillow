@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: py-zillow
+Version: 0.0.2
+Summary: A Zillow API wrapper
+Home-page: https://github.com/AlexanderDewhirst/py-zillow
+Author: Alexander Dewhirst
+Author-email: alex@freightroll.com
+License: MIT
+Description: # Zillow API wrapper - Python
+        This project provides a wrapper to request information from the endpoints
+        provided by the Zillow API.
+        
+        ### Getting Setup
+        To install this module, you can run:
+        `pip3 install py-zillow`
+        
+        For this module, you will need a few additional modules located in requirements.txt. Let me know if you have any questions.
+        
+        ##### Notice
+        Zillow does not permit the storage of information locally. You may use the API only to retrieve and display dynamic content from Zillow. You can find more information about Zillow's API usage at https://www.zillow.com/howto/api/faq.htm
+        
+        ### API Methods
+        Zillow provides the following API methods:
+        * GetUpdatedPropertyDetails
+        * GetRegionChildren
+        * GetSearchResults
+        * GetDeepSearchResults
+        * GetZestimate
+        * GetComps
+        * GetDeepComps
+        
+        ### Wrapper Data Structure
+        1. Place
+          * zpid
+          * address
+          * zestimate
+          * details
+          * links
+          * local_real_estate
+        
+        2. Address
+          * street
+          * city
+          * state
+          * zipcode
+          * latitude
+          * longitude
+        
+        3. Zestimate
+          * amount
+          * last_updated
+          * low_value
+          * high_value
+        
+        4. Details
+          * bedrooms
+          * bathrooms
+          * finished_sqft
+          * lot_size_sqft
+          * year_built
+          * num_rooms
+          * last_sold_date
+          * last_sold_price
+        
+        5. Links
+          * home_details
+          * graphs_and_data
+          * map_this_home
+          * comparables
+        
+        6. LocalRealEstate
+          * region
+Keywords: zillow,api,real estate,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
